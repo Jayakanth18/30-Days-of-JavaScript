@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Level3</title>
+</head>
+<body>
+    <h1>Day2 Level3</h1>
+
+    <script>
+        //1
+        let word='Love is the best thing in this world. Some found their love and some are still looking for their love.';
+        let word2= /love/gi;
+        console.log(word.match(word2));
+
+        //2
+        let sen='You cannot end a sentence with because because because is a conjunction';
+        let sen2= /because/gi
+        console.log(sen.match(sen2));
+
+        //3
+        let sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
+
+        sentence = sentence.replace(/%/g,"")
+        sentence  =sentence.replace(/@/g, "")
+        sentence = sentence.replace(/\$/g, "")
+        sentence = sentence.replace(/&/g, "")
+        sentence = sentence.replace(/#/g, "")
+        sentence = sentence.replace(/;/g, "")
+        sentence = sentence.replace(/,/g, "")
+        sentence = sentence.replace(/\./g, "")
+        console.log(sentence)
+
+        //4
+
+        const text = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro\ online courses per month.';
+        const arr = text.match(/\d+/g);
+        console.log(arr)
+        const totalAnnualIncome = (+arr[0] + +arr[2]) * 12 + +arr[1];
+        console.log(totalAnnualIncome);
+
+        //
+        document.write()
+
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

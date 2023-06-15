@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Examples</h1>
+    <script>
+
+        //find the length of the string
+        let name="Jayakanth"
+        console.log(name.length)
+        
+       //converts to uppercase
+        let fullName="jayakanth"
+        let caps=fullName.toUpperCase()
+        console.log("This is Captital: ", caps)
+
+        //converts to lowercase
+        let Name1="JAYAkAnth"
+        console.log("This is Lowercase: ", Name1.toLowerCase())
+
+        //substr() 
+        // syntax  substr(start,length)
+        let c="Chennai Super Kings"
+        console.log(c.substr(8,5))
+
+        //substring()
+        //syntax substring(start,end)
+        let d="key to sucess"
+        console.log(d.substring(4,6))
+
+        //split() convert into array
+        let e="this is an example "
+        console.log(e)
+        console.log(e.split())
+        console.log(e.split(""))
+
+        //trim() remove excess space in start and end
+        let f="   example of trim    "
+        console.log(f)
+        console.log(f.trim())
+
+        //includes()
+        let g="this is database"
+        console.log(g.includes("database"))
+        console.log(g.includes("Database"))
+
+        //replace()
+        let h="this is a mar"
+        console.log(h)
+        console.log(h.replace("m","c"))
+
+        //charAt()
+        let i="i love india"
+        console.log(i.charAt(5))
+        //charCodeat() used to get unicode 
+        console.log("unicode is:", i.charCodeAt(5))
+
+        //indexOf()
+        let j="this is string and also string"
+        console.log(j.indexOf("string")) //not avaliable it shows -1
+        //lastIndexOf()
+        console.log(j.lastIndexOf("string"))
+
+        //concat()
+        let k="my"
+        let k2=k.concat(" name"," is"," jk")
+        console.log(k2)
+
+        //startsWith()
+        let l="tata paunch is nice car"
+        console.log(l.startsWith('tata'))
+        console.log(l.startsWith('Tata'))
+        //endsWith()
+        console.log(l.endsWith("Car"))
+        console.log(l.endsWith("car"))
+
+        //search()
+        var m="this is m and 105";
+        console.log(m.search('is'))
+        console.log(m.search(105))
+        // console.log(m.indexOf(105))
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

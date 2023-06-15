@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        DAY-2 Level 1 questions-1 to 9
+    </h1>
+
+    <script>
+        //1
+        let challenge='30 Days Of JavaScript';
+        //2
+        console.log(challenge);
+        //3
+        console.log('Length of the string:', challenge.length);
+        //4
+        console.log('all capital:',challenge.toUpperCase());
+        //5
+        console.log('all lowecase:',challenge.toLowerCase());
+        //6
+        console.log('substr method:',challenge.substr(3,20));
+        console.log('substing method:',challenge.substring(3,21));
+        //7
+        console.log('Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript:',challenge.substring(0,2))
+        //8
+        console.log('include:',challenge.includes('Script'));
+        //9
+        console.log(challenge.split());
+        //10
+        console.log('split at space:',challenge.split(' '));
+        //11
+        let q11='Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+        console.log(q11.split(' '));
+        //12
+        console.log('replaced:',challenge.replace('JavaScript','Python'));
+        //13
+        console.log('charAt:',challenge.charAt(15));
+        //14
+        console.log('charCodeAt:',challenge.charCodeAt("J"));
+        //15
+        console.log('indexOf:',challenge.indexOf('a'));
+        //16
+        console.log('lastIndexOf:',challenge.lastIndexOf('a'));
+        //17
+        let q17='You cannot end a sentence with because because because is a conjunction'
+        console.log('indexOf:',q17.indexOf('because'));
+        //18
+        console.log('lastIndexOf:',q17.lastIndexOf('because'));
+        //19
+        console.log('search:',q17.search('because'));
+        //20
+        let q20='     30 Days Of JavaScript  '
+        console.log('with space:',q20);
+        console.log('withOut space:',q20.trim());
+        //21
+        console.log('startsWith:',challenge.startsWith('3'));
+        //22
+        console.log('endsWith:',challenge.endsWith('Script'));
+        //23
+        let match123= /a/gi
+        console.log('match:',challenge.match(match123));
+        //24
+        let a='30 Days Of';
+        let b="JavaScript";
+        console.log('concat:', `${a} ${b}`)
+        //25
+        console.log('repeat:', challenge.repeat(2))
+    </script>
+</body>
+</html>

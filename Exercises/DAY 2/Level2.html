@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day-2 Level 2</h1>
+
+    <script>
+        //1
+        console.log('There is no exercise better for the heart than reaching down and lifting people up.');
+        //2
+        console.log("Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.");
+        //3
+        let a='10';
+        let b=Number(a);
+        console.log(typeof(b));
+        //4
+        var c=parseFloat('9.8');
+        console.log(Math.ceil(c));
+        //5
+       var d='python, jargon';
+       var e='jargon';
+        console.log(d.includes('on'));
+        console.log(e.includes('on'));
+        //6
+        let f='I hope this course is not full of jargon.';
+        console.log(f.includes('jargon'));
+        //7
+       const g=Math.random() * 101;
+       const h=Math.floor(g);
+        console.log('Random number between 0 to 100:',h);
+        //8
+        //syntax  Math.floor(Math.random()*(max-min+1))+min;
+       var i=Math.floor(Math.random()*(51))+50;
+        console.log('Random number between 50 to 100:', i);
+        //9
+        const j=Math.floor(Math.random()*256);
+        console.log('Random number between 0 to 255:', j);
+        //10
+        // let word='JavaScript';
+        // let max=word.length,min=1;
+        // let rand=Math.floor(Math.random()*max-min+1)+1;
+        // let filter=word.lenght-rand;
+        // console.log(rand.charAt());
+
+        var word='javascript',max=word.length,min=1;
+        const rand=Math.floor(Math.random()*max-min+1)+min;
+        var filter=word.length-rand;
+        console.log(word.charAt(filter))
+
+        //11
+        console.log('1\t1\t1\t1\t1\t\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125');
+        //12
+        let k='You cannot end a sentence with because because because is a conjunction';
+        l=k.substr(0,30);
+        m=k.substr(55,71);
+        console.log(l,m)
+
+
+        
+
+      
+
+
+   </script>
+</body>
+</html>
